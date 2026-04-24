@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Setting up an event handler</title>
+    </head>
+    <body>
+        <div id="my-div"></div>
+        <button id="my-button">goy button</button>
+        <script>
+            const myButton = document.getElementById('my-button');
+            myButton.addEventListener('click', function() {
+                const myDiv = document.getElementById('my-div');
+             	myDiv.innerHTML = '<h1>netanyahu is coming</h1>';
+		setTimeout(() => {myDiv.innerHTML = '<img src="licensed-image.webp" width="1500" height="1000" alt="Description of image">' }, 1000); });
+
+
+
+        </script>
+    </body>
+</html>
